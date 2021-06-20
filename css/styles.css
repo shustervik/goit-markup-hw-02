@@ -12,6 +12,7 @@
   --hero-text-color: #ffffff;
   --primary-bg-color: #ffffff;
   --footer-text-color: #ffffff;
+  --button-bg-color: #f5f4fa;
 }
 
 body {
@@ -60,16 +61,20 @@ ul {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+/* секции */
 .section-title {
   color: var(--title-text-color);
 }
-
+/* герой */
 .hero-title {
   color: var(--hero-text-color);
 }
 /* skills */
 .skills .title {
   color: var(--title-text-color);
+}
+.hide {
+  display: none;
 }
 /* team */
 .team .title {
@@ -92,4 +97,21 @@ ul {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+/* портфолио. примеры работ */
+.portfolio .title {
+  color: var(--title-text-color);
+}
+.portfolio .button {
+  color: var(--title-text-color);
+  background-color: var(--button-bg-color);
+
+  border-color: transparent;
+}
+.portfolio .button:hover,
+.portfolio .button:link {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+
+  border-color: transparent;
 }
