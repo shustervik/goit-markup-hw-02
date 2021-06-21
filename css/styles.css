@@ -96,6 +96,18 @@ body {
 .hero {
   background-color: var(--hero-bg-color);
 }
+/* button */
+.btn {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
 /* skills */
 .skills {
   list-style: none;
@@ -125,17 +137,6 @@ body {
 .team .title {
   color: var(--title-text-color);
   font-weight: 500;
-}
-/* button */
-.btn {
-  color: var(--hero-text-color);
-  background-color: var(--accent-color);
-  border-color: transparent;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 /* footer */
 .footer {
@@ -170,6 +171,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  cursor: pointer;
 }
 .portfolio .filter:hover,
 .portfolio .filter:focus {
