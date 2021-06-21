@@ -9,53 +9,67 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --logo-text-color: #000000;
   --hero-text-color: #ffffff;
-  --primary-bg-color: #ffffff;
   --footer-text-color: #ffffff;
-  --button-bg-color: #f5f4fa;
+  --primary-bg-color: #ffffff;
+  --filter-bg-color: #f5f4fa;
+  --team-bg-color: #f5f4fa;
+  --hero-bg-color: #2f303a;
+  --footer-bg-color: #2f303a;
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* logo*/
 .logo,
 .logo:hover,
-.logo:focus {
-  color: #000000;
+.logo:focus,
+.accent {
+  color: var(--logo-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
-
-.logo-web {
-  color: var(--accent-color);
-}
-
-.logo-footer,
-.logo-footer:hover,
-.logo-footer:focus {
+.footer .logo {
   color: var(--footer-text-color);
 }
-
-/* site-nav */
-.site-nav .link {
-  color: var(--title-text-color);
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
+.accent {
   color: var(--accent-color);
 }
+/* site-nav, auth-nav */
+.site-nav,
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  font-family: inherit;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* auth-nav */
 .auth-nav .link {
-  color: var(--primary-text-color);
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -64,54 +78,113 @@ ul {
 /* секции */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 /* герой */
 .hero-title {
   color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero {
+  background-color: var(--hero-bg-color);
 }
 /* skills */
+.skills {
+  list-style: none;
+}
 .skills .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .hide {
   display: none;
 }
+/* основные занятия */
+.work {
+  list-style: none;
+}
 /* team */
+.team {
+  background-color: var(--team-bg-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  list-style: none;
+}
 .team .title {
   color: var(--title-text-color);
+  font-weight: 500;
 }
 /* button */
 .btn {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-
   border-color: transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+/* footer */
+.footer {
+  background-color: var(--footer-bg-color);
 }
 /* address */
 .address {
   color: var(--footer-text-color);
+  font-family: inherit;
+  font-style: inherit;
+}
+.auth {
+  list-style: none;
 }
 .address .link {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
 }
-/* портфолио. примеры работ */
-.portfolio .title {
-  color: var(--title-text-color);
+/* портфолио*/
+.portfolio {
+  list-style: none;
 }
-.portfolio .button {
+.portfolio .filter {
   color: var(--title-text-color);
-  background-color: var(--button-bg-color);
-
+  background-color: var(--filter-bg-color);
   border-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
-.portfolio .button:hover,
-.portfolio .button:link {
+.portfolio .filter:hover,
+.portfolio .filter:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-
   border-color: transparent;
+}
+.portfolio .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.87;
 }
